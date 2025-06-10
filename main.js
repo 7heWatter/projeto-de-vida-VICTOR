@@ -50,3 +50,4 @@ function comecaCronometro(){
 }
 
 comecaCronometro();
+if calculaTempo > 0 = concluido;
