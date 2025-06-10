@@ -35,6 +35,11 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
 
-    return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
-    
+    return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos "); 
+}
+
+function atualizaCronometro(){
+    for (let i=0; i<contadores.length; i++){
+        contadores[i].textContent=calculaTempo(tempos[i]);
+    }
 }
